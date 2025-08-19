@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <title>Create Public Link</title>
+</head>
+<body>
+    <h1>Create a Public Link</h1>
+    <form id="linkForm">
+        <textarea id="content" placeholder="Enter your content here..." required></textarea>
+        <input type="text" id="alias" placeholder="Custom alias (optional)">
+        <button type="submit">Create Link</button>
+    </form>
+    <div id="result"></div>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
