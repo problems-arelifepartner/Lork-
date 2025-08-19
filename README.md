@@ -14,3 +14,23 @@ pip3 install flask
 
 # 4. Run the Flask app
 python3 app.py
+
+
+# 5 Open a browser and navigate to:
+ http://127.0.0.1:5000
+
+ # 6 For network access (other devices):
+  flask run --host=0.0.0.0 --port=5000
+
+
+ # 7 Then use:
+ http://[YOUR-COMPUTER-LOCAL-IP]:5000
+
+ Find your IP via hostname -I on Linux/WSL or ipconfig on macOS).
+
+ # Important
+ Educational purposes only!
+
+ Termux requires manual directory setup (templates/, static/).
+ For public access, always use --host=0.0.0.0.
+ To stop the server, press Ctrl+C in the terminal.
